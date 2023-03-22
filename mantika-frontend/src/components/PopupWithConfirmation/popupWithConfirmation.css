@@ -1,0 +1,22 @@
+.popup-with-confirmation__msg {
+  margin: 30px 0 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 50px;
+  color: #1a1b22;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+}
+
+.popup-with-confirmation__btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup-with-confirmation__btn {
+  z-index: 5;
+  width: 80px;
+  height: 30px;
+}

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: #1a1b22;
+  font-family: 'Nunito-Regular';
+  color: aliceblue;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+button {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: aliceblue;
+  background-color: rgb(52, 14, 156);
+  text-shadow: none;
+  box-shadow: 0 0 10px 1px rgba(26, 27, 34, 1);
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}

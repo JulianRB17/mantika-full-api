@@ -1,0 +1,141 @@
+.user-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  background-color: black;
+  margin: 70px auto;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  outline: 2px solid aliceblue;
+}
+
+.user-content__profile-img {
+  position: relative;
+  margin-top: 25px;
+  width: 50%;
+  min-width: 180px;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 10px 100px / 120px;
+}
+
+.user-content__info-container {
+  width: 80%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-content__info-element {
+  display: flex;
+  padding: 15px 0;
+}
+
+.user-content__info-key {
+  margin: 0;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+}
+
+.user-content__info-value {
+  margin: 0 0 0 30px;
+  font-size: 20px;
+  line-height: 37px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.user-content__input {
+  background-color: rgba(26, 27, 34, 1);
+  color: aliceblue;
+  border-radius: 5px;
+  width: 80%;
+  min-width: 100px;
+  font-size: 20px;
+}
+
+.user-content__input_large {
+  height: 150px;
+}
+
+.user-content__input::placeholder {
+  font-size: 20px;
+  color: gray;
+}
+
+.user-content__input:focus {
+  outline: 5px groove rgba(0, 145, 175, 1);
+}
+
+.user-content__submit-btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: aliceblue;
+  background-color: rgb(52, 14, 156);
+  text-shadow: none;
+  box-shadow: 0 0 10px 1px rgba(26, 27, 34, 1);
+  margin: 20px auto 30px;
+  height: 40px;
+  width: 40%;
+}
+
+.user-content__submit-btn_inactive {
+  background-color: gray;
+  cursor: default;
+}
+
+.user-content__trash-btn {
+  width: 30px;
+  height: 35px;
+  background: url('../../images/trash-btn.svg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 15px 35px 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .user-content__info-container {
+    padding: 20px 0 0;
+    width: 90%;
+  }
+
+  .user-content__info-element {
+    margin: 0;
+  }
+
+  .user-content__info-key {
+    font-size: 20px;
+  }
+
+  .user-content__input::placeholder {
+    font-size: 18px;
+  }
+
+  .user-content__info-value {
+    margin-left: 15px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .user-content__info-key {
+    font-size: 15px;
+  }
+
+  .user-content__info-value {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}

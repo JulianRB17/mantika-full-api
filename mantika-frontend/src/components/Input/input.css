@@ -1,0 +1,48 @@
+.input {
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 75%;
+  margin: 5px auto 10px;
+  height: 25px;
+  position: relative;
+}
+
+.input::placeholder {
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.input:focus {
+  outline: 2px groove #32a1ce;
+}
+
+.input_large {
+  height: 100px;
+}
+
+.input:invalid[blur='true'] ~ .input__error-msg {
+  display: block;
+}
+
+.input:invalid[blur='true'] {
+  outline: 2px double pink;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input__error-msg {
+  color: rgb(236, 139, 139);
+  text-shadow: 0 0 1px white;
+  width: 75%;
+  margin: 0 auto;
+  display: none;
+}
+
+.input__label {
+  margin: 10px auto 0 10%;
+  font-size: 20px;
+  padding-left: 10px;
+}

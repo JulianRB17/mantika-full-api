@@ -1,0 +1,64 @@
+.content-input {
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 80%;
+  min-width: 100px;
+  height: 30px;
+  font-size: 20px;
+}
+.content-input__large {
+  height: 150px;
+}
+
+.content-input:invalid[blur='true'] ~ .content-input__error-msg {
+  display: block;
+}
+
+.content-input:invalid[blur='true'] {
+  outline: 2px double pink;
+}
+
+.content-input::placeholder {
+  padding-left: 10px;
+  font-size: 18px;
+  color: gray;
+}
+
+.content-input:focus {
+  outline: 5px groove rgba(0, 145, 175, 1);
+}
+
+.content-input__info-value {
+  margin: 0 0 10px 30px;
+  font-size: 20px;
+  line-height: 37px;
+}
+
+.content-input__container {
+  width: 100%;
+}
+
+.content-input__error-msg {
+  color: rgb(255, 103, 103);
+  text-shadow: 0 0 1px white;
+  width: 80%;
+  margin: 10px auto 0;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .content-input::placeholder {
+    font-size: 18px;
+  }
+  .content-input__info-value {
+    margin-left: 15px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .content-input__info-value {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}

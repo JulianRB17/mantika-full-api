@@ -1,0 +1,100 @@
+.proyect-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  background-color: black;
+  margin: 70px auto;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  outline: 2px solid aliceblue;
+}
+
+.proyect-content__profile-img {
+  position: relative;
+  margin-top: 25px;
+  width: 50%;
+  min-width: 180px;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 10px 100px / 120px;
+}
+
+.proyect-content__info-container {
+  width: 80%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.proyect-content__info-element {
+  display: flex;
+  padding: 15px 0;
+}
+
+.proyect-content__info-key {
+  margin: 0;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+}
+
+.proyect-content__submit-btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: aliceblue;
+  background-color: rgb(52, 14, 156);
+  text-shadow: none;
+  box-shadow: 0 0 10px 1px rgba(26, 27, 34, 1);
+  margin: 20px auto 30px;
+  height: 40px;
+  width: 40%;
+}
+
+.proyect-content__submit-btn_inactive {
+  background-color: gray;
+  cursor: default;
+}
+
+.proyect-content__trash-btn {
+  width: 30px;
+  height: 35px;
+  background: url('../../images/trash-btn.svg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 15px 35px 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .proyect-content__info-container {
+    padding: 20px 0 0;
+    width: 90%;
+  }
+
+  .proyect-content__info-element {
+    margin: 0;
+  }
+
+  .proyect-content__info-key {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .proyect-content__info-key {
+    font-size: 15px;
+  }
+
+  .proyect-content__info-value {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,77 @@
+.about {
+  display: flex;
+  position: relative;
+  padding: 90px 0 60px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  text-shadow: 3px 3px 3px rgba(26, 27, 34, 1);
+}
+
+.about__logo {
+  width: 15%;
+  min-width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 2px rgba(26, 27, 34, 1);
+}
+
+.about__title {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 80px;
+}
+
+.about__subtitle {
+  margin: 0;
+  padding: 10px 0 40px;
+  font-size: 27px;
+}
+
+.about__paragraph-subtitle {
+  margin: 0 auto 0 0;
+  font-size: 25px;
+  padding-top: 40px;
+}
+
+.about__paragraph {
+  margin: 0;
+  font-size: 20px;
+  padding-top: 25px;
+  line-height: 30px;
+  text-justify: newspaper;
+}
+
+.about__animation {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about__title {
+    font-size: 50px;
+  }
+
+  .about__subtitle {
+    font-size: 20px;
+  }
+
+  .about__paragraph-subtitle {
+    font-size: 18px;
+  }
+
+  .about__paragraph {
+    font-size: 15px;
+  }
+}
