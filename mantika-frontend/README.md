@@ -113,8 +113,4 @@ Se usan las siguientes tecnologías:
 - MongoDB - Base de datos no relacional.
 - Mongoose - Vincula a MongoDB con Node.js.
 - Git - Sistema de control.
-- GoogleCloud - Espacio virtual donde se almacena el servidor.
-- NGINX - Proxy inverso para gestionar los puertos del servidor.
-- pm2 - Gestionador de procesos que mantiene la app en línea de forma perpetua.
-- Ubuntu 20.04 - Sistema operativo en el que está alojado el servidor.
 ```
