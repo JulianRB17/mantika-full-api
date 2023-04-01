@@ -1,6 +1,6 @@
 # Mantika full api
 
-## API creada para el proyecto final del bootcamp en web development Practicum de Yandex.
+## full API creada para el proyecto final del bootcamp en web development Practicum de Yandex.
 
 Para revisar el proyecto se debe correr primero el backend con npm run dev, también activar mongod y, finalmente, correr el frontend con npm start.
 
