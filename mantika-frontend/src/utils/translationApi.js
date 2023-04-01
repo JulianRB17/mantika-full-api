@@ -115,7 +115,6 @@ class TanslationApi {
   }
 
   _createTextBody() {
-    console.log(this);
     this._options.body = JSON.stringify({
       texts: Object.values(this.spanishObject),
       tl: this._trLanguague,

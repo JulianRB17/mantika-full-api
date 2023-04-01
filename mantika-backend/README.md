@@ -96,8 +96,8 @@ Para usar la web app se requiere una autorización.
 
 ### Running the backend project
 
-El backend está corriendo constantemente gracias a pm2.
-Si fuera necesario reiniciarlo se usa: pm2 restar app.
+- `npm run dev` — Para iniciar el servidor en modo de desarrollo.
+- `mongod` — Para iniciar mongoose.
 
 ## Tech
 
